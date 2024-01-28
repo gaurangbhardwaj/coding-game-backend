@@ -41,17 +41,17 @@ const challenges = [
       {
         id: 0,
         input: "const result1 = addTwoNumbers(0, 1);",
-        output: "console.log(test(result1, 1));",
+        output: "console.log(`Test Case 1:`, test(result1, 1)? `Passed`:`Failed (excepted 1, got ${result1})`);",
       },
       {
         id: 1,
         input: "const result2 = addTwoNumbers(1, 2);",
-        output: "console.log(test(result2, 3));",
+        output: "console.log(`Test Case 2:`, test(result2, 3)? `Passed`:`Failed (excepted 3, got ${result2})`);",
       },
       {
         id: 2,
         input: "const result3 = addTwoNumbers(100, 20);",
-        output: "console.log(test(result3, 120));",
+        output: "console.log(`Test Case 3:`, test(result3, 120)? `Passed`:`Failed (excepted 120, got ${result3})`);",
       },
     ],
   },
@@ -97,17 +97,17 @@ const challenges = [
       {
         id: 0,
         input: "const result1 = isEven(2);",
-        output: "console.log(test(result1, true));",
+        output: "console.log(`Test Case 1:`, test(result1, true)? `Passed`:`Failed (excepted true, got ${result1})`);",
       },
       {
         id: 1,
         input: "const result2 = isEven(1);",
-        output: "console.log(test(result2, false));",
+        output: "console.log(`Test Case 2:`, test(result2, false)? `Passed`:`Failed (excepted false, got ${result2})`);",
       },
       {
         id: 2,
         input: "const result3 = isEven(100);",
-        output: "console.log(test(result3, true));",
+        output: "console.log(`Test Case 3:`, test(result3, true)? `Passed`:`Failed (excepted true, got ${result3})`);",
       },
     ],
   },
@@ -147,12 +147,12 @@ const challenges = [
       {
         id: 0,
         input: "const result1 = factorial(6);",
-        output: "console.log(test(result1, 720));",
+        output: "console.log(`Test Case 1:`, test(result1, 720)? `Passed`:`Failed (excepted 720, got ${result1})`);"
       },
       {
         id: 1,
         input: "const result2 = factorial(2);",
-        output: "console.log(test(result2, 2));",
+        output: "console.log(`Test Case 2:`, test(result2, 2)? `Passed`:`Failed (excepted 2, got ${result2})`);"
       },
     ],
   },
@@ -198,17 +198,17 @@ const challenges = [
       {
         id: 0,
         input: "const result1 = isPositive(1);",
-        output: "console.log(test(result1, true));",
+        output: "console.log(`Test Case 1:`, test(result1, true)? `Passed`:`Failed (excepted true, got ${result1})`);"
       },
       {
         id: 1,
         input: "const result2 = isPositive(0);",
-        output: "console.log(test(result2, false));",
+        output: "console.log(`Test Case 2:`, test(result2, false)? `Passed`:`Failed (excepted false, got ${result2})`);"
       },
       {
         id: 2,
         input: "const result3 = isPositive(-2);",
-        output: "console.log(test(result3, false));",
+        output: "console.log(`Test Case 3:`, test(result3, false)? `Passed`:`Failed (excepted false, got ${result3})`);"
       },
     ],
   },
@@ -249,12 +249,13 @@ const challenges = [
       {
         id: 0,
         input: "const result1 = reverse('DOG');",
-        output: "console.log(test(result1, 'GOD'));",
+        output: "console.log(`Test Case 1:`, test(result1, 'GOD')? `Passed`:`Failed (excepted GOD, got ${result1})`);"
       },
       {
         id: 1,
         input: "const result2 = reverse('HELLO');",
         output: "console.log(test(result2, 'OLLEH'));",
+        output: "console.log(`Test Case 2:`, test(result2, 'OLLEH')? `Passed`:`Failed (excepted OLLEH, got ${result2})`);"
       },
     ],
   },
